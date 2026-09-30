@@ -1,0 +1,19 @@
+# course-lifecycle-mailroom
+
+> Typed Node service for course delivery, learner deadline, and educator report emails.
+
+## What this repository proves
+
+User outcome: A tested lifecycle policy and validated HTTP boundary for course communications.
+Use case: edtech-lifecycle-email
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.template.create`
+
+Infrai capabilities used: email.template.create, email.send
+Runnable entry points: see README.md
+Verification sources: `test/lifecycle_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

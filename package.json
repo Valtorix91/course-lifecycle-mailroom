@@ -1,0 +1,23 @@
+{
+  "name": "course-lifecycle-mailroom",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/course_mail_service.ts",
+    "start": "tsx src/course_mail_service.ts",
+    "publish:templates": "tsx scripts/publish_templates.ts",
+    "test": "tsx --test test/lifecycle_policy.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
